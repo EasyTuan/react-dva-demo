@@ -1,0 +1,20 @@
+@import "./mixin";
+@import "./iconfont";
+
+body,html,#root {
+  height: 100%;
+  background: @fill-body;
+  font-size: @font-base;
+}
+
+@media screen and (min-width: 500px) {
+  #root, .am-tab-bar-bar {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}

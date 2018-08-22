@@ -1,0 +1,54 @@
+{
+  "name": "web-h5-lease",
+  "version": "1.0.0",
+  "description": "m-site-news 租赁在架模式重构新项目",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development DEV_ENV=dev roadhog server",
+    "dev": "cross-env NODE_ENV=development DEV_ENV=dev roadhog server",
+    "dev-test": "cross-env NODE_ENV=development DEV_ENV=test roadhog server",
+    "dev-pro": "cross-env NODE_ENV=development DEV_ENV=pro roadhog server",
+    "build": "cross-env NODE_ENV=production BUILD_ENV=pro roadhog build",
+    "test": "cross-env NODE_ENV=production BUILD_ENV=test roadhog build",
+    "eslint": "eslint --cache --fix --ext .js src test",
+    "tep": "node template",
+    "stylelint": "stylelint \"{src/styles,src/pages,src/components}/**/*.less\" --syntax less",
+    "stylelint-fix": "stylelint \"{src/styles,src/pages,src/components}/**/*.less\" --syntax less --fix",
+    "precommit": "npm run eslint && npm run stylelint"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.2.3",
+    "axios": "^0.18.0",
+    "dva": "^2.4.0",
+    "dva-loading": "^2.0.5",
+    "postcss-pxtorem": "^4.0.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-import": "^1.8.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.14.0",
+    "eslint-config-af-react": "^0.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.12.0",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^2.4.4",
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0",
+    "vconsole": "^3.2.0"
+  },
+  "theme": {
+    "hd": "2px"
+  }
+}
