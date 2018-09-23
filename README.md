@@ -39,7 +39,7 @@ npm run build
 
 ## 2. 业务介绍
 
-### 2.1 小程序业务入口
+### 2.1 React业务入口
 
 入口地址为 `src/main.js`
 
