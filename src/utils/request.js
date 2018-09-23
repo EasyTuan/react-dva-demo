@@ -2,8 +2,6 @@ import axios from 'axios';
 import config from '../config';
 import { Toast } from 'antd-mobile';
 
-const reqData = {};
-
 const request = (options = { method: 'GET' }, is_wx) => {
   if (
     options.method.toUpperCase() !== 'POST'
