@@ -1,4 +1,4 @@
-项目名：[ A React project ]，H5重构项目。
+项目名：[ A React project ]。
 
 ## 1. 如何运行
 
